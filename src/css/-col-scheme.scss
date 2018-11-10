@@ -87,11 +87,9 @@ $footer_link_scnd_col: $footer_txt_col;
     font-style: normal;
   }
   a {
-    &.email {
+    color: $footer_link_scnd_col;
+    &:hover {
       color: $footer_link_col;
-    }
-    &.skype {
-      color: $footer_link_scnd_col;
     }
   }
   .footer-block__header {

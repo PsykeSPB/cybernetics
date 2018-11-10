@@ -10,6 +10,9 @@ body * {
 
 ._nowrap {
   flex-wrap: nowrap !important;
+  @media screen and (#{$small-screen}) {
+    flex-wrap: wrap !important;
+  }
 }
 
 ._header-block-pad {
