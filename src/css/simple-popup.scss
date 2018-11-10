@@ -3,39 +3,53 @@
   width: 100vw;
   height: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.95);
   display: none;
   opacity: 0;
   transition: 0.3s;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Used for animation startup */
 .popup-active {
-  display: block !important;
+  display: flex !important;
   opacity: 0 !important;
 }
 
 /* This is the finale state of popup window when it is opened */
 .popup-opened {
-  display: block !important;
+  display: flex !important;
   opacity: 1 !important;
 }
 
 .popup__body {
+  position: relative;
   background: #ffffff;
-  width: fit-content;
-  margin: auto;
+  width: 100%;
+  margin: 10px;
+  max-width: 900px;
+  padding: 25px;
+  h3 {
+    margin-bottom: 25px;
+  }
+  p {
+  }
 }
 
 .popup__closure {
-  position: fixed;
+  position: absolute;
   z-index: 1001;
-  top: 10px;
-  right: 10px;
+  top: 4px;
+  right: 4px;
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 /* This styles used to create a cross sign on top of the closure element */

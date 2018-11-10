@@ -1,8 +1,13 @@
 @import "-global-vars";
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 $g-h-padding;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 $cont-h-padding;
+  .container__inner {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+  }
 }

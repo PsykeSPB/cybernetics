@@ -1,0 +1,37 @@
+.news-btn {
+  margin-top: 22px;
+  width: 150px;
+  height: 20px;
+}
+
+.news-item {
+  position: relative;
+  padding-top: 11px;
+  .news-item__cont {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    .news-item__img {
+      width: 120px;
+      margin-right: 18px;
+    }
+    .news-item__header {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: bold;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .news-item__rubric {
+      margin-bottom: 12px;
+    }
+  }
+  &:hover {
+    .news-item__header {
+      color: #003162;
+    }
+  }
+}

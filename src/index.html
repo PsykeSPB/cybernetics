@@ -1,79 +1,410 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Binary experts - Questions will be answered</title>
-    <meta name="description" content="Новости из мира Binary Experts">
-    <meta name="about" content="Тестовое задание на вакансию 'Верстальщик' в компанию 'Кибернетика'">
-    <meta name="author" content="PsykeSPB@gmail.com">
+    <meta name="description" content="Новости из мира Binary Experts" />
+    <meta
+      name="about"
+      content="Тестовое задание на вакансию 'Верстальщик' в компанию 'Кибернетика'"
+    />
+    <meta name="author" content="PsykeSPB@gmail.com" />
 
-    <link rel="stylesheet" href="css/main.min.css">
-    <script async src="js/main.min.js"></script>
-</head>
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-<body>
-    <header id="header" class="header-block">
-        <div class="container">
+  <body>
+    <header id="header" class="header-block _header-block-pad">
+      <div class="container">
+        <div class="container__inner">
+          <!-- Flex structure block (https://codepen.io/psykespb/pen/LXNwjm) -->
 
-            <!-- Flex structure block (https://codepen.io/psykespb/pen/LXNwjm)-->
-            <!-- endof Flex structure block -->
+          <div class="flex-struct-block _nowrap">
+            <div class="flex-struct-block__item sign">
+              <div class="_logo-right-pad">
+                <img src="img/logo.png" alt="Binary Experts logo" />
+              </div>
+            </div>
+            <div class="flex-struct-block__item content">
+              <h1 class="header-block__header _title-position">
+                Questions will&nbsp;be&nbsp;answered
+              </h1>
+            </div>
+          </div>
 
+          <!-- endof Flex structure block -->
         </div>
+      </div>
     </header>
 
-    <section id='news' class="news-block">
-        <div class="container">
+    <section id="news" class="news-block _news-block_padding">
+      <div class="container">
+        <div class="container__inner">
+          <!-- header of "news" block -->
+          <h2 class="news-block__header _uppercase">Новости:</h2>
+          <!-- endof header of "news" block -->
 
-            <!-- header of "news" block -->
-            <!-- endof header of "news" block -->
-
-        </div>
-    </section>
-
-    <section id='offers' class="offers-block">
-        <div class="container">
-
-            <!-- header of "offers" block -->
-            <!-- endof header of "offers" block -->
-
-        </div>
-    </section>
-
-    <footer id='footer' class="footer-block">
-        <div class="container">
-
-            <!-- Flex structure block (https://codepen.io/psykespb/pen/LXNwjm)-->
-
-            <div class="flex-struct-block">
-                <div class="flex-struct-block__item sign">
-
-                    <div id="contacts" class="contacts-block">
-                        <h2 class="footer-block__header">Контакты:</h2>
-                        <address>
-                            <b>Телефон:</b> +7 (812) 123-45-67<br>
-                            <b>E-mail:</b> <a class="email" href="mailto:mail@site.ru">mail@site.ru</a><br>
-                            <b>Skype:</b> <a class="skype" href="#">skype for example</a><br>
-                            <b>Адрес:</b> 123456, г. Москва, ул. Строителей, д. 3, кв. 12
-                        </address>
+          <!--
+            Adaptive flex container with separators https://codepen.io/psykespb/pen/eQZyzv
+          -->
+          <div class="flex-cont">
+            <div class="flex-item _mb-9 _minw-0 _top_separator">
+              <div class="news-item">
+                <div class="news-item__cont">
+                  <div class="news-item__img">
+                    <img src="img/news-item1.jpg" />
+                  </div>
+                  <div class="news-item__desc _minw-0">
+                    <div class="news-item__header ">Case study: HUGE</div>
+                    <div class="news-item__rubric">
+                      So to kick off 2014, we continued to apply this principle
+                      to the evolution of our own brand, introducing a refined
+                      design system along with a new logo and a reengineered
+                      site.<br />
+                      <br />
+                      Over the course of the last 15 years, we have grown so
+                      much and worked hard to apply the same approach we take to
+                      our client work, to our own brand as well. We wanted to
+                      celebrate that growth with a nod to where we are heading.
                     </div>
-
+                  </div>
                 </div>
-                <div class="flex-struct-block__item content">
+              </div>
 
-                    <div id="feedback" class="feedback-block">
-                        <h2 class="footer-block__header">Напишите нам:</h2>
-
-                    </div>
-
+              <button
+                class="news-btn btn-action open-popup"
+                data-popup="news-pop-1"
+              >
+                <div class="btn-action__content _uppercase _font-size-14 _m-0">
+                  Читать дальше
                 </div>
+              </button>
             </div>
+            <div class="flex-item _mb-9 _minw-0 _top_separator">
+              <div class="news-item">
+                <div class="news-item__cont">
+                  <div class="news-item__img">
+                    <img src="img/news-item2.jpg" />
+                  </div>
+                  <div class="news-item__desc _minw-0">
+                    <div class="news-item__header ">
+                      UncleGrey and MediaMonks win May's something
+                    </div>
+                    <div class="news-item__rubric">
+                      Sed ut perspiciatis, unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam eaque ipsa, quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt, explicabo.
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <!-- endof Flex structure block -->
+              <button
+                class="news-btn btn-action open-popup"
+                data-popup="news-pop-2"
+              >
+                <div class="btn-action__content _uppercase _font-size-14 _m-0">
+                  Читать дальше
+                </div>
+              </button>
+            </div>
+            <div class="flex-item _mb-9 _minw-0 _top_separator">
+              <div class="news-item">
+                <div class="news-item__cont">
+                  <div class="news-item__img">
+                    <img src="img/news-item3.jpg" />
+                  </div>
+                  <div class="news-item__desc _minw-0">
+                    <div class="news-item__header ">
+                      Top Digital Agencies in California
+                    </div>
+                    <div class="news-item__rubric">
+                      California is one of the most culturally, imaginatively,
+                      and technologically diverse regions of our planet. There,
+                      the last few decades have witnessed an amazing
+                      socio-cultural experiment that has gone hand-in-hand with
+                      the greatest technological and business boom known to man.
+                      From Los Angeles and San Francisco to San Diego and
+                      Sacramento, we can find some of the most important
+                      agencies of our time in this State. It’s where the offices
+                      of Frog Design, Code and Theory, BBDO, Fi, Huge, R/GA,
+                      Unit9, and Media Monks are located. In this post, we turn
+                      our attention to other companies that are a bit less known
+                      on the international scene but, likewise, have earned the
+                      community’s respect. We invite you to learn more about
+                      California by taking a look at our directory.
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <button
+                class="news-btn btn-action open-popup"
+                data-popup="news-pop-3"
+              >
+                <div class="btn-action__content _uppercase _font-size-14 _m-0">
+                  Читать дальше
+                </div>
+              </button>
+            </div>
+            <div class="flex-item _mb-9 _minw-0 _top_separator">
+              <div class="news-item">
+                <div class="news-item__cont">
+                  <div class="news-item__img">
+                    <img src="img/news-item4.jpg" />
+                  </div>
+                  <div class="news-item__desc _minw-0">
+                    <div class="news-item__header ">
+                      Developing an Effective Strategy
+                    </div>
+                    <div class="news-item__rubric">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="news-btn btn-action open-popup"
+                data-popup="news-pop-4"
+              >
+                <div class="btn-action__content _uppercase _font-size-14 _m-0">
+                  Читать дальше
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
-    </footer>
-</body>
+      </div>
+    </section>
 
+    <section id="offers" class="offers-block _offers_block-padding">
+      <div class="container">
+        <div class="container__inner">
+          <!-- header of "offers" block -->
+          <h2 class="offers-block__header _uppercase">Акции:</h2>
+          <!-- endof header of "offers" block -->
+
+          <!--
+            Adaptive flex container with separators https://codepen.io/psykespb/pen/eQZyzv
+          -->
+          <div class="flex-cont">
+            <div class="flex-item">
+              <a href="#">
+                <!--
+                  Responsible image container https://codepen.io/psykespb/pen/mQPevz
+                -->
+                <div class="resp_img hvr_ovrly">
+                  <div class="hvr_ovrly__ovrly"></div>
+                  <img
+                    class="resp_img__img"
+                    src="img/offers1.jpg"
+                    alt="responsible image"
+                  />
+                </div>
+                <!-- endof Responsible image container -->
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="#">
+                <div class="resp_img hvr_ovrly">
+                  <div class="hvr_ovrly__ovrly"></div>
+                  <img
+                    class="resp_img__img"
+                    src="img/offers2.jpg"
+                    alt="responsible image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="#">
+                <div class="resp_img hvr_ovrly">
+                  <div class="hvr_ovrly__ovrly"></div>
+                  <img
+                    class="resp_img__img"
+                    src="img/offers3.jpg"
+                    alt="responsible image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="#">
+                <div class="resp_img hvr_ovrly">
+                  <div class="hvr_ovrly__ovrly"></div>
+                  <img
+                    class="resp_img__img"
+                    src="img/offers4.jpg"
+                    alt="responsible image"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="#">
+                <div class="resp_img hvr_ovrly">
+                  <div class="hvr_ovrly__ovrly"></div>
+                  <img
+                    class="resp_img__img"
+                    src="img/offers5.jpg"
+                    alt="responsible image"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- endof Adaptive flex container with separators -->
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer-block _footer-block-pad">
+      <div class="container">
+        <div class="container__inner">
+          <!-- Flex structure block (https://codepen.io/psykespb/pen/LXNwjm) -->
+
+          <div class="flex-struct-block">
+            <div class="flex-struct-block__item sign">
+              <div id="contacts" class="contacts-block _pr-cont _w-240">
+                <h2 class="footer-block__header">Контакты:</h2>
+                <address>
+                  <b>Телефон:</b> +7 (812) 123-45-67<br />
+                  <b>E-mail:</b>
+                  <a class="email" href="mailto:mail@site.ru">mail@site.ru</a
+                  ><br />
+                  <b>Skype:</b> <a class="skype" href="#">skype for example</a
+                  ><br />
+                  <b>Адрес:</b> 123456, г. Москва, ул. Строителей, д. 3, кв. 12
+                </address>
+              </div>
+            </div>
+            <div class="flex-struct-block__item content">
+              <div id="feedback" class="feedback-block">
+                <h2 class="footer-block__header">Напишите нам:</h2>
+
+                <!--
+                  Form with email validation https://codepen.io/psykespb/pen/RqRbWw
+                -->
+                <div class="form-email-valid footer-block__scnd-bg">
+                  <div class="form-email-valid__body">
+                    <form class="form-email-valid__form" novalidate>
+                      <input
+                        class="_input_pad"
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                      />
+                      <div class="form-email-valid__email-error"></div>
+                      <textarea
+                        class="_input_line_height _input_pad"
+                        type="textfield"
+                        name="message"
+                        placeholder="Введите свое сообщение..."
+                        rows="2"
+                      ></textarea>
+                      <div class="form-email-valid__message-error"></div>
+                      <button class="btn-action" type="submit">
+                        <div
+                          class="btn-action__content _uppercase _font-size-18 _m-0"
+                        >
+                          Отправить
+                        </div>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <!-- endof form with email validation -->
+              </div>
+            </div>
+          </div>
+
+          <!-- endof Flex structure block -->
+        </div>
+      </div>
+    </footer>
+
+    <div id="news-pop-1" class="popup">
+      <div class="popup__body">
+        <div class="popup__closure"></div>
+        <h3>Case study: HUGE</h3>
+        <p>
+          So to kick off 2014, we continued to apply this principle to the
+          evolution of our own brand, introducing a refined design system along
+          with a new logo and a reengineered site.<br />
+          <br />
+          Over the course of the last 15 years, we have grown so much and worked
+          hard to apply the same approach we take to our client work, to our own
+          brand as well. We wanted to celebrate that growth with a nod to where
+          we are heading.
+        </p>
+      </div>
+    </div>
+    <div id="news-pop-2" class="popup">
+      <div class="popup__body">
+        <div class="popup__closure"></div>
+        <h3>UncleGrey and MediaMonks win May's something</h3>
+        <p>
+          Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt, explicabo.
+        </p>
+      </div>
+    </div>
+    <div id="news-pop-3" class="popup">
+      <div class="popup__body">
+        <div class="popup__closure"></div>
+        <h3>Top Digital Agencies in California</h3>
+        <p>
+          California is one of the most culturally, imaginatively, and
+          technologically diverse regions of our planet. There, the last few
+          decades have witnessed an amazing socio-cultural experiment that has
+          gone hand-in-hand with the greatest technological and business boom
+          known to man.<br />
+          <br />
+          From Los Angeles and San Francisco to San Diego and Sacramento, we can
+          find some of the most important agencies of our time in this State.
+          It’s where the offices of Frog Design, Code and Theory, BBDO, Fi,
+          Huge, R/GA, Unit9, and Media Monks are located. In this post, we turn
+          our attention to other companies that are a bit less known on the
+          international scene but, likewise, have earned the community’s
+          respect.<br />
+          <br />
+          We invite you to learn more about California by taking a look at our
+          directory.
+        </p>
+      </div>
+    </div>
+    <div id="news-pop-4" class="popup">
+      <div class="popup__body">
+        <div class="popup__closure"></div>
+        <h3>Developing an Effective Strategy</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.<br />
+          <br />
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.min.js"></script>
 </html>

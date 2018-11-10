@@ -1,1 +1,27 @@
-$g-h-padding: 60px;
+$column-width: 240px;
+$column-marging: 40px;
+
+$h1-font-size: 25px;
+$h1-line-height: 30px;
+$h2-font-size: 24px;
+$text-font-size: 14px;
+$text-line-height: 18px;
+$text-mar-bottom: 6px;
+
+// container
+$cont-h-padding: $column-marging;
+
+// offers flexible cont
+$small-screen: "max-width: 600px";
+$middle-screen: "min-width: 600px";
+$big-screen: "min-width: 900px";
+$large-screen: "min-width: 1200px";
+
+// footer form
+$form-pad-top: 10px;
+$form-pad-left: 10px;
+$form-pad-bottom: 10px;
+$form-pad-right: 10px;
+$form-inner-pad: 10px;
+$form-input-height: 40px;
+$form-btn-height: 39px;

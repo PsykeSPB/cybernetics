@@ -1,0 +1,32 @@
+@import "-global-vars";
+
+.news-block {
+  .flex-cont {
+    $sep-width: 40px;
+    margin: 0 $sep-width/-2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    .flex-item {
+      @mixin item-width($items-per-row) {
+        $item-width: 100% / $items-per-row;
+        flex-basis: $item-width;
+        margin-bottom: $sep-width/2;
+      }
+
+      @include item-width(1);
+      box-sizing: border-box;
+      padding: 0 $sep-width/2;
+
+      @media screen and (#{$middle-screen}) {
+        @include item-width(1);
+      }
+      @media screen and (#{$big-screen}) {
+        @include item-width(2);
+      }
+      @media screen and (#{$large-screen}) {
+        @include item-width(3);
+      }
+    }
+  }
+}

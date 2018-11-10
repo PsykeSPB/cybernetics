@@ -9,7 +9,6 @@ $news_bg_col: #ffffff;
 $news_head_txt_col: $action_btn_col;
 $news_head_txt_shdw_col: rgba(0, 0, 0, 0.3);
 $news_txt_col: #000000;
-$news_txt_hov_col: #003162;
 
 $offer_bg_col: #28313a;
 $offer_head_txt_col: $action_btn_col;
@@ -24,33 +23,64 @@ $footer_txt_col: $header_txt_col;
 $footer_link_col: $action_btn_col;
 $footer_link_scnd_col: $footer_txt_col;
 
+%full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-action {
+  color: $action_btn_txt_col;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  &:before {
+    @extend %full;
+    content: "";
+    height: 200%;
+    transition: 0.3s;
+    background: linear-gradient(
+      $action_btn_col,
+      $action_btn_scnd_col,
+      $action_btn_col
+    );
+  }
+  .btn-action__content {
+    @extend %full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &:hover:before {
+    top: -100%;
+  }
+}
 .header-block,
 .footer-block {
   background: $header_bg_col;
   color: $header_txt_col;
 }
-
-// To calculate shadows offset we would use sin and cos approximations given here
-// https://unindented.org/articles/trigonometry-in-sass/
-@import "math";
-
+.header-block {
+  .header-block__header {
+    text-shadow: 1px 2px 0 $news_head_txt_shdw_col;
+  }
+}
 .news-block {
   background: $news_bg_col;
   color: $news_txt_col;
   .news-block__header {
     color: $news_head_txt_col;
-    text-shadow: 1 * cos(120) 1 * sin(120) 0 $news_head_txt_shdw_col;
+    text-shadow: 1px 2px 0 $news_head_txt_shdw_col;
   }
 }
-
 .offers-block {
   background: $offer_bg_col;
   .offers-block__header {
     color: $offer_head_txt_col;
-    text-shadow: 1 * cos(120) 1 * sin(120) 0 $offer_head_txt_shdw_col;
+    text-shadow: 1px 2px 0 $offer_head_txt_shdw_col;
   }
 }
-
 .footer-block {
   address {
     text-decoration: none;
@@ -66,6 +96,9 @@ $footer_link_scnd_col: $footer_txt_col;
   }
   .footer-block__header {
     color: $footer_head_txt_col;
-    text-shadow: 1 * cos(120) 1 * sin(120) 0 $footer_head_txt_shdw_col;
+    text-shadow: 1px 2px 0 $footer_head_txt_shdw_col;
+  }
+  .footer-block__scnd-bg {
+    background: $footer_bg_scnd_col;
   }
 }

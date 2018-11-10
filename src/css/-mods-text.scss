@@ -1,0 +1,31 @@
+@import "-global-vars";
+
+h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  line-height: 2 * 17px + $h2-font-size;
+}
+
+a,
+p,
+address {
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+  margin-bottom: $text-mar-bottom;
+}
+
+._uppercase {
+  text-transform: uppercase !important;
+}
+
+._font-size-18 {
+  font-size: 18px;
+}
+
+._font-size-14 {
+  font-size: 14px;
+}

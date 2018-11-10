@@ -1,3 +1,4 @@
+const fs = require("fs");
 const gulp = require("gulp");
 const htmlmin = require("gulp-htmlmin");
 const scss = require("gulp-sass");
@@ -32,7 +33,7 @@ const paths = {
   }
 };
 
-let clean = () => del(["assets"]);
+let clear = () => del(["assets"]);
 
 function pages() {
   return gulp
@@ -71,13 +72,13 @@ function images() {
 function scripts() {
   return gulp
     .src(paths.scripts.src)
+    .pipe(concat("main.min.js"))
     .pipe(
       babel({
         presets: ["@babel/env"]
       })
     )
     .pipe(uglify())
-    .pipe(concat("main.min.js"))
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
@@ -93,6 +94,6 @@ function watch() {
     w_jn = gulp.watch(paths.jsons.src, gulp.series(jsons));
 }
 
-gulp.task("clean", clean);
+gulp.task("clear", clear);
 gulp.task("default", gulp.series(pages, styles, scripts, images, jsons));
 gulp.task("watch", gulp.series(watch));

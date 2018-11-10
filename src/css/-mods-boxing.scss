@@ -1,0 +1,71 @@
+@import "-global-vars";
+
+body,
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+._nowrap {
+  flex-wrap: nowrap !important;
+}
+
+._header-block-pad {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
+._logo-right-pad {
+  margin-top: 22px;
+  margin-right: 48px;
+}
+
+._title-position {
+  padding-top: (104px - $h1-font-size) / 2;
+}
+
+._footer-block-pad {
+  padding-top: 9px;
+  padding-bottom: 40px;
+}
+
+._pr-cont {
+  padding-right: $cont-h-padding !important;
+}
+
+._w-240 {
+  width: $column-width !important;
+}
+
+._input_pad {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+._input_line_height {
+  line-height: 33px !important;
+}
+
+._offers_block-padding {
+  padding-top: 30px;
+  padding-bottom: 21px;
+}
+
+._news-block_padding {
+  padding-top: 30px;
+  padding-bottom: 11px;
+}
+
+._m-0 {
+  margin: 0 !important;
+}
+
+._mb-9 {
+  margin-bottom: 9px !important;
+}
+
+._minw-0 {
+  min-width: 0 !important;
+}
