@@ -1,0 +1,71 @@
+$action_btn_col: #ff0e00;
+$action_btn_scnd_col: #b30800;
+$action_btn_txt_col: #ffffff;
+
+$header_bg_col: #101a24;
+$header_txt_col: #ffffff;
+
+$news_bg_col: #ffffff;
+$news_head_txt_col: $action_btn_col;
+$news_head_txt_shdw_col: rgba(0, 0, 0, 0.3);
+$news_txt_col: #000000;
+$news_txt_hov_col: #003162;
+
+$offer_bg_col: #28313a;
+$offer_head_txt_col: $action_btn_col;
+$offer_head_txt_shdw_col: $news_head_txt_shdw_col;
+$offer_hover_ovrly_col: rgba(0, 0, 0, 0.7);
+
+$footer_bg_col: $header_bg_col;
+$footer_bg_scnd_col: #28313a;
+$footer_head_txt_col: #ffb400;
+$footer_head_txt_shdw_col: $news_head_txt_shdw_col;
+$footer_txt_col: $header_txt_col;
+$footer_link_col: $action_btn_col;
+$footer_link_scnd_col: $footer_txt_col;
+
+.header-block,
+.footer-block {
+  background: $header_bg_col;
+  color: $header_txt_col;
+}
+
+// To calculate shadows offset we would use sin and cos approximations given here
+// https://unindented.org/articles/trigonometry-in-sass/
+@import "math";
+
+.news-block {
+  background: $news_bg_col;
+  color: $news_txt_col;
+  .news-block__header {
+    color: $news_head_txt_col;
+    text-shadow: 1 * cos(120) 1 * sin(120) 0 $news_head_txt_shdw_col;
+  }
+}
+
+.offers-block {
+  background: $offer_bg_col;
+  .offers-block__header {
+    color: $offer_head_txt_col;
+    text-shadow: 1 * cos(120) 1 * sin(120) 0 $offer_head_txt_shdw_col;
+  }
+}
+
+.footer-block {
+  address {
+    text-decoration: none;
+    font-style: normal;
+  }
+  a {
+    &.email {
+      color: $footer_link_col;
+    }
+    &.skype {
+      color: $footer_link_scnd_col;
+    }
+  }
+  .footer-block__header {
+    color: $footer_head_txt_col;
+    text-shadow: 1 * cos(120) 1 * sin(120) 0 $footer_head_txt_shdw_col;
+  }
+}

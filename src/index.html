@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header" class="header-block">
         <div class="container">
 
             <!-- Flex structure block (https://codepen.io/psykespb/pen/LXNwjm)-->
@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <section id='news'>
+    <section id='news' class="news-block">
         <div class="container">
 
             <!-- header of "news" block -->
@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <section id='offers'>
+    <section id='offers' class="offers-block">
         <div class="container">
 
             <!-- header of "offers" block -->
@@ -41,8 +41,36 @@
         </div>
     </section>
 
-    <footer id='contacts'>
+    <footer id='footer' class="footer-block">
         <div class="container">
+
+            <!-- Flex structure block (https://codepen.io/psykespb/pen/LXNwjm)-->
+
+            <div class="flex-struct-block">
+                <div class="flex-struct-block__item sign">
+
+                    <div id="contacts" class="contacts-block">
+                        <h2 class="footer-block__header">Контакты:</h2>
+                        <address>
+                            <b>Телефон:</b> +7 (812) 123-45-67<br>
+                            <b>E-mail:</b> <a class="email" href="mailto:mail@site.ru">mail@site.ru</a><br>
+                            <b>Skype:</b> <a class="skype" href="#">skype for example</a><br>
+                            <b>Адрес:</b> 123456, г. Москва, ул. Строителей, д. 3, кв. 12
+                        </address>
+                    </div>
+
+                </div>
+                <div class="flex-struct-block__item content">
+
+                    <div id="feedback" class="feedback-block">
+                        <h2 class="footer-block__header">Напишите нам:</h2>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- endof Flex structure block -->
 
         </div>
     </footer>
