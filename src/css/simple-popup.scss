@@ -1,0 +1,78 @@
+/* Documents background when popup is opened. It is always fits the screen. You can set duration of animation with transition property. */
+.popup {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Used for animation startup */
+.popup-active {
+  display: block !important;
+  opacity: 0 !important;
+}
+
+/* This is the finale state of popup window when it is opened */
+.popup-opened {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.popup__body {
+  background: #ffffff;
+  width: fit-content;
+  margin: auto;
+}
+
+.popup__closure {
+  position: fixed;
+  z-index: 1001;
+  top: 10px;
+  right: 10px;
+  content: "";
+  width: 30px;
+  height: 30px;
+}
+
+/* This styles used to create a cross sign on top of the closure element */
+.popup__closure:before,
+.popup__closure:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background: red;
+  top: 50%;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+
+.popup__closure:before {
+  transform: rotate(45deg);
+}
+
+.popup__closure:after {
+  transform: rotate(-45deg);
+}
+
+.popup__closure:hover:before,
+.popup__closure:hover:after {
+  background: orange;
+}
+
+/* This is the style of the element that triggers the popup. */
+.open-popup {
+  padding: 8px 24px;
+  color: white;
+  background: #000000;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.open-popup:hover {
+  background: #555555;
+}

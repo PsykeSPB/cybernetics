@@ -1,0 +1,18 @@
+.flex-struct-block {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  width: 100%;
+  .flex-struct-block__item {
+    &.header,
+    &.footer {
+      width: 100%;
+    }
+    &.sign {
+      flex: 0 0 max-content;
+    }
+    &.content {
+      flex: 1 1 auto;
+    }
+  }
+}

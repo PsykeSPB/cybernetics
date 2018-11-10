@@ -1,0 +1,35 @@
+$form-pad-top: 20px;
+$form-pad-left: 20px;
+$form-pad-bottom: 20px;
+$form-pad-right: 20px;
+$form-inner-pad: 10px;
+$form-input-height: 30px;
+$form-btn-height: 50px;
+
+.form-email-valid {
+  padding: $form-pad-top $form-pad-left $form-pad-bottom $form-pad-right;
+  * {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .form-email-valid__body {
+    margin-top: $form-inner-pad;
+    input {
+      height: $form-input-height;
+      margin-bottom: $form-inner-pad;
+    }
+    textarea {
+      resize: none;
+      margin-bottom: $form-inner-pad !important;
+    }
+    button {
+      height: $form-btn-height;
+    }
+    .form-email-valid__email-error,
+    .form-email-valid__message-error {
+      color: #ff0000;
+      margin-bottom: $form-inner-pad !important;
+    }
+  }
+}
