@@ -17,7 +17,7 @@
 1. Установить репозиторий на жесткий диск
 
 ```
-git clone git@github.com:PsykeSPB/egp.git .
+git clone git@github.com:PsykeSPB/cybernetics.git .
 ```
 
 2. Установить все необходимые зависимости
